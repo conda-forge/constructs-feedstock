@@ -1,5 +1,5 @@
 {% set name = "constructs" %}
-{% set version = "10.3.1" %}
+{% set version = "10.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/constructs-{{ version }}.tar.gz
-  sha256: 9900205fc8eeb7a6fd7f58853a91b2cb44162871bbbbfd28a17928d1b30f2986
+  sha256: cde3fa553d526d233d810d3391a1db5f026e17c2ea4788843fdd72f7aa3a632e
 
 build:
   noarch: python
@@ -22,9 +22,9 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - python-jsii >=1.103.1,<2.0.0
+    - python-jsii >=1.102.0,<2.0.0
     - publication >=0.0.3
-    - typeguard >=2.13.3,<5.0.0
+    - typeguard >=2.13.3,<2.14.dev0
 
 test:
   imports:
