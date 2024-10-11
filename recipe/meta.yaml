@@ -11,20 +11,20 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
-    - python >=3.7
-    - setuptools >=67.3.2,<67.4.dev0
-    - wheel >=0.40,<1.dev0
+    - python >=3.8
+    - setuptools >=70.0.0,<70.1.dev0
+    - wheel >=0.42,<1.dev0
     - pip
   run:
-    - python >=3.7
-    - python-jsii >=1.84.0,<2.0.0
+    - python >=3.8
+    - python-jsii >=1.103.1,<2.0.0
     - publication >=0.0.3
-    - typeguard >=2.13.3,<2.14.dev0
+    - typeguard >=2.13.3,<5.0.0
 
 test:
   imports:
