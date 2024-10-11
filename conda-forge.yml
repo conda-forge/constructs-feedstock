@@ -1,4 +1,6 @@
-github:
+bot:
+  inspection: update-grayskull
+hub:
   branch_name: main
   tooling_branch_name: main
 conda_build:
