@@ -1,5 +1,5 @@
 {% set name = "constructs" %}
-{% set version = "10.4.5" %}
+{% set version = "10.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/constructs-{{ version }}.tar.gz
-  sha256: efa0f9e4fe65bd334bad719d00e0c8d9e3e4c6d873da8e874e67517a029c190b
+  sha256: 88d23b10361c0a8b4896f6bed66693a0f4c61f0aa4247eb33a34a4ed12e67aaf
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - python-jsii >=1.125.0,<2.0.0
+    - python-jsii >=1.126.0,<2.0.0
     - publication >=0.0.3
     - typeguard ==2.13.3
 
